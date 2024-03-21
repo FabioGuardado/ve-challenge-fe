@@ -1,0 +1,34 @@
+.navbar {
+  background-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.navbarContainer {
+  color: var(--primary-text-color);
+}
+
+.navbarCollapseButon {
+  color: var(--primary-text-color);
+}
+
+.navbarText {
+  font-weight: 700;
+}
+
+.navbarFull {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarItem {
+  padding: 0  10px 5px;
+  border-bottom: 2px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
+
+.navbarItem:hover {
+  border-bottom: 2px solid var(--primary-text-color);
+}
