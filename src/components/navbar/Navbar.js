@@ -12,6 +12,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { List, ListItem, Collapse } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
+import ROUTES from "@/constants/routes";
+
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -43,13 +45,13 @@ export default function Navbar() {
                       setOpen(false);
                     }}
                   >
-                    Registro de usuarios
+                    Registro de solicitudes
                   </Typography>
                 </ListItem>
                 <Collapse in={open} timeout="auto" unmountOnExit>
                   <List component="div" disablePadding>
                     <ListItem>
-                      <Link href="/usuarios" className="navbar__item">
+                      <Link href={ROUTES.home} className={styles.navbarItem}>
                         Listado
                       </Link>
                     </ListItem>
@@ -62,9 +64,9 @@ export default function Navbar() {
           {full && (
             <div className={styles.navbarFull}>
               <Typography variant="h6" className={styles.navbarText}>
-                Registro de usuarios
+                Registro de solicitudes
               </Typography>
-              <Link href="/usuarios" className={styles.navbarItem}>
+              <Link href={ROUTES.home} className={styles.navbarItem}>
                 Listado
               </Link>
             </div>
