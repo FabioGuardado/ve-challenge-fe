@@ -1,5 +1,12 @@
+
+import SolicitudDetails from "@/components/solicitudDetails/SolicitudDetails";
+
 export default function DetalleUsuario() {
   return (
-    <h1>DetalleUsuario</h1>
+    <>
+      <div className="wrapper">
+        <SolicitudDetails />
+      </div>
+    </>
   );
 }
