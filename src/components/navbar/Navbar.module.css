@@ -12,6 +12,7 @@
 }
 
 .navbarText {
+  color: var(--primary-text-color);
   font-weight: 700;
 }
 
@@ -24,6 +25,7 @@
 }
 
 .navbarItem {
+  color: var(--primary-text-color);
   padding: 0  10px 5px;
   border-bottom: 2px solid transparent;
   transition: all ease-in-out 0.2s;
