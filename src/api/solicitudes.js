@@ -11,3 +11,8 @@ export const getSolicitudById = async (solicitudId = '') => {
   const { data } = await baseClient.get(endpoint);
   return data;
 };
+
+export const createSolicitud = async (solicitudData) => {
+  const response = await baseClient.post(ENDPOINTS.solicitudes, solicitudData);
+  return response;
+}
