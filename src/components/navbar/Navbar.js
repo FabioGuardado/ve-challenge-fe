@@ -55,6 +55,14 @@ export default function Navbar() {
                         Listado
                       </Link>
                     </ListItem>
+                    <ListItem>
+                      <Link
+                        href={ROUTES.nuevaSolicitud}
+                        className={styles.navbarItem}
+                      >
+                        Nueva Solicitud
+                      </Link>
+                    </ListItem>
                   </List>
                 </Collapse>
               </List>
@@ -66,9 +74,17 @@ export default function Navbar() {
               <Typography variant="h6" className={styles.navbarText}>
                 Registro de solicitudes
               </Typography>
-              <Link href={ROUTES.home} className={styles.navbarItem}>
-                Listado
-              </Link>
+              <div>
+                <Link href={ROUTES.home} className={styles.navbarItem}>
+                  Listado
+                </Link>
+                <Link
+                  href={ROUTES.nuevaSolicitud}
+                  className={styles.navbarItem}
+                >
+                  Nueva Solicitud
+                </Link>
+              </div>
             </div>
           )}
         </Toolbar>
