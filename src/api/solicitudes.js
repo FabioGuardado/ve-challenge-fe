@@ -6,7 +6,8 @@ export const getAllSolicitudes = async () => {
   return data;
 };
 
-export const getSolicitudById = async (solicitudId) => {
-  const { data } = await baseClient.get(`${ENDPOINTS.solicitudes}/${solicitudId}`);
+export const getSolicitudById = async (solicitudId = '') => {
+  const endpoint = `${ENDPOINTS.solicitudes}/${solicitudId}`;
+  const { data } = await baseClient.get(endpoint);
   return data;
 };

@@ -1,0 +1,21 @@
+.userInfoElementContainer {
+  padding-bottom: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--tertiary-color);
+}
+
+.userInfoElementTitle {
+  font-weight: 700;
+  max-width: 25%;
+}
+
+.UserInfoElementInfo {
+  text-align: right;
+  max-width: 70%;
+  text-wrap: wrap;
+}
