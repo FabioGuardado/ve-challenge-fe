@@ -1,0 +1,64 @@
+.nuevaSolicitudFormContainer {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+}
+
+.nuevaSolicitudFormGrid {
+  display: grid;
+  grid-template-columns: calc(50% - 2rem) calc(50% - 2rem);
+  gap: 2rem;
+}
+
+.nuevaSolicitudFormItemContainer {
+  margin: 2rem 0;
+}
+
+.nuevaSolicitudFormItemField {
+  width: 100%;
+}
+
+.nuevaSolicitudFormBtnContainer {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nuevaSolicitudFormBtn {
+  padding: 1rem;
+  width: 50%;
+  border-radius: var(--border-radius);
+  box-shadow: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nuevaSolicitudFormErrorMessage {
+  margin-top: 0.5rem;
+  padding: 0 5px;
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .nuevaSolicitudFormGrid {
+    grid-template-columns: auto;
+    gap: 0;
+  }
+
+  .nuevaSolicitudFormItemContainer:first-of-type {
+    margin: 2rem 0 0 0;
+  }
+
+  .nuevaSolicitudFormItemContainer:last-of-type {
+    margin: 0;
+  }
+
+  .nuevaSolicitudFormBtn {
+    width: 100%;
+  }
+}

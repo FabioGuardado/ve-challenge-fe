@@ -1,0 +1,26 @@
+.documentsCardContainer {
+  margin: 5rem 0 2rem;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+
+  @media screen and (max-width: 600px) {
+    margin-top: 0;
+  }
+}
+
+.documentsCardTitle {
+  margin-bottom: 2rem;
+}
+
+.documentsCardItem {
+  padding: 1.5rem;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+}
+
+.documentsCardItem > :last-child{
+  margin-left: 1rem;
+}

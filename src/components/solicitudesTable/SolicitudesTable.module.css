@@ -1,0 +1,24 @@
+.tableContainer {
+  margin: 1rem 0;
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
+  box-shadow: none;
+  border: none;
+}
+
+.tableHeaderCell {
+  font-weight: 700;
+}
+
+.detallesButton {
+  min-width: 120px;
+  text-transform: capitalize;
+  border-color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  list-style: none;
+}
+
+.detallesButton:hover {
+  background-color: var(--primary-text-color);
+  color: var(--primary-color);
+}
