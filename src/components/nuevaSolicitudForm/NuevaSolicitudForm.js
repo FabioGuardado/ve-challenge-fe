@@ -82,7 +82,7 @@ export default function NuevaSolicitudForm() {
                   required: { value: true, message: "Este campo es requerido" },
                 })}
               ></TextField>
-              {errors?.nombres ? <p>{errors?.nombres?.message}</p> : null}
+              {errors?.nombres ? <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.nombres?.message}</p> : null}
             </div>
 
             <div className={styles.nuevaSolicitudFormItemContainer}>
@@ -97,7 +97,7 @@ export default function NuevaSolicitudForm() {
                   required: { value: true, message: "Este campo es requerido" },
                 })}
               ></TextField>
-              {errors?.apellidos ? <p>{errors?.apellidos?.message}</p> : null}
+              {errors?.apellidos ? <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.apellidos?.message}</p> : null}
             </div>
 
             <div className={styles.nuevaSolicitudFormItemContainer}>
@@ -106,7 +106,7 @@ export default function NuevaSolicitudForm() {
                 type="text"
                 variant="outlined"
                 label="Correo Electrónico"
-                error={errors?.correoElectronico}
+                error={errors?.email}
                 className={styles.nuevaSolicitudFormItemField}
                 {...register("email", {
                   required: { value: true, message: "Este campo es requerido" },
@@ -117,8 +117,8 @@ export default function NuevaSolicitudForm() {
                   },
                 })}
               ></TextField>
-              {errors?.correoElectronico ? (
-                <p>{errors?.correoElectronico?.message}</p>
+              {errors?.email ? (
+                <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.email?.message}</p>
               ) : null}
             </div>
 
@@ -138,7 +138,7 @@ export default function NuevaSolicitudForm() {
                   },
                 })}
               ></TextField>
-              {errors?.telefono ? <p>{errors?.telefono?.message}</p> : null}
+              {errors?.telefono ? <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.telefono?.message}</p> : null}
             </div>
 
             <div className={styles.nuevaSolicitudFormItemContainer}>
@@ -165,7 +165,7 @@ export default function NuevaSolicitudForm() {
                 </Select>
               </FormControl>
               {errors?.tipoIdentificacion ? (
-                <p>{errors?.tipoIdentificacion?.message}</p>
+                <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.tipoIdentificacion?.message}</p>
               ) : null}
             </div>
 
@@ -202,7 +202,7 @@ export default function NuevaSolicitudForm() {
                 })}
               ></TextField>
               {errors?.numeroIdentificacion ? (
-                <p>{errors?.numeroIdentificacion?.message}</p>
+                <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.numeroIdentificacion?.message}</p>
               ) : null}
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function NuevaSolicitudForm() {
                 </Select>
               </FormControl>
               {errors?.departamento ? (
-                <p>{errors?.departamento?.message}</p>
+                <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.departamento?.message}</p>
               ) : null}
             </div>
 
@@ -265,7 +265,7 @@ export default function NuevaSolicitudForm() {
                   ))}
                 </Select>
               </FormControl>
-              {errors?.municipio ? <p>{errors?.municipio?.message}</p> : null}
+              {errors?.municipio ? <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.municipio?.message}</p> : null}
             </div>
 
             <div className={styles.nuevaSolicitudFormItemContainer}>
@@ -280,7 +280,7 @@ export default function NuevaSolicitudForm() {
                   required: { value: true, message: "Este campo es requerido" },
                 })}
               ></TextField>
-              {errors?.direccion ? <p>{errors?.direccion?.message}</p> : null}
+              {errors?.direccion ? <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.direccion?.message}</p> : null}
             </div>
 
             <div className={styles.nuevaSolicitudFormItemContainer}>
@@ -301,7 +301,7 @@ export default function NuevaSolicitudForm() {
                 })}
               ></TextField>
               {errors?.ingresosMensuales ? (
-                <p>{errors?.ingresosMensuales?.message}</p>
+                <p className={styles.nuevaSolicitudFormErrorMessage}>{errors?.ingresosMensuales?.message}</p>
               ) : null}
             </div>
 
@@ -316,9 +316,6 @@ export default function NuevaSolicitudForm() {
                 onChange={handleInputChange}
                 
               />
-              {errors?.documentoIdentidad ? (
-                <p>{errors?.documentoIdentidad?.message}</p>
-              ) : null}
             </div>
           </div>
         </div>

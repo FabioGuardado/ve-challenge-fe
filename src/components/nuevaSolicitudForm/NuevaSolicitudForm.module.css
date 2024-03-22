@@ -7,7 +7,7 @@
 
 .nuevaSolicitudFormGrid {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: calc(50% - 2rem) calc(50% - 2rem);
   gap: 2rem;
 }
 
@@ -36,6 +36,12 @@
   border: none;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.nuevaSolicitudFormErrorMessage {
+  margin-top: 0.5rem;
+  padding: 0 5px;
+  color: red;
 }
 
 @media screen and (max-width: 600px) {
